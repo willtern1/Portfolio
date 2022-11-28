@@ -1,0 +1,28 @@
+@keyframes scale-buble {
+    0% { 
+        scale: (1);
+     }
+    50% { 
+        scale: (3);
+     }
+    100% { 
+        scale: (1);
+     }
+}
+
+@mixin before_circle {
+    &::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+        top: -25%;
+        left: -0.3%;
+        transition: all 1s;
+        animation: scale-buble  4s infinite ease-in-out;
+    }
+}
+
