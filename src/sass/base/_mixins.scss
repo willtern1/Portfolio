@@ -9,6 +9,17 @@
         scale: (1);
      }
 }
+@keyframes scale-buble-min {
+    0% { 
+        scale: (1);
+     }
+    50% { 
+        scale: (1.5);
+     }
+    100% { 
+        scale: (1);
+     }
+}
 
 @mixin before_circle {
     &::before {
