@@ -15,3 +15,27 @@ $(document).ready(function () {
         }
     );
 })
+
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      closeElem = document.querySelector('.menu__close')
+      overlay = document.querySelector('.menu__overlay');
+//открытие бургера
+hamburger.addEventListener('click', () => {
+        menu.classList.add('active');
+ });
+//закрытие окна по кретику
+closeElem.addEventListener('click', () => {
+    menu.classList.remove('active')
+})
+//закрытие окна по escape
+window.addEventListener("keydown", function (e) {   
+    if (e.which == 27) {
+        e.preventDefault();
+        menu.classList.remove('active')
+    }
+});
+//закрытие окна по оверлею
+overlay.addEventListener('click', () => {
+    menu.classList.remove('active')
+})
