@@ -14,6 +14,9 @@
         position: relative;
         z-index: 2;
         @include before_circle;
+        &::before {
+            animation: scale-buble 4s infinite ease-in-out;
+        }
     }
     &__buttons {
         margin-top: 25px;
