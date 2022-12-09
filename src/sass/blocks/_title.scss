@@ -22,4 +22,19 @@
     &_fz48 {
         font-size: 48px;
     }
+    &__section-subtitle {
+        text-align: center;
+        margin: 0;
+        position: relative;
+        z-index: 3;
+        @include before_circle;
+        &:before {
+            animation: scale-buble-min 5s infinite ease-in-out;
+            left: 48.4%;
+        }
+    }
+    &__section-title {
+        text-align: center;
+        margin: 0;
+    }
 }

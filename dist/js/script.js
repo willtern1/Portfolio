@@ -14,6 +14,7 @@ $(document).ready(function () {
             };
         }
     );
+    new WOW().init();
 })
 
 const hamburger = document.querySelector('.hamburger'),
@@ -27,7 +28,7 @@ hamburger.addEventListener('click', () => {
 //закрытие окна по кретику
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active')
-})
+});
 //закрытие окна по escape
 window.addEventListener("keydown", function (e) {   
     if (e.which == 27) {
@@ -38,4 +39,11 @@ window.addEventListener("keydown", function (e) {
 //закрытие окна по оверлею
 overlay.addEventListener('click', () => {
     menu.classList.remove('active')
-})
+});
+//ворк скилл проценты
+const counters = document.querySelectorAll('.workskills__statistics-procents'),
+      lines = document.querySelectorAll('.workskills__statistics-line');
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

@@ -1,25 +1,5 @@
 .resume {
     padding: 0 0 120px 0;
-    &__subtitle {
-        text-align: center;
-        margin: 0;
-        position: relative;
-        z-index: 2;
-        @include before_circle;
-        &::before {
-            animation: scale-buble-min 5s infinite ease-in-out;
-            left: 48.4%;
-        }
-    }
-    &__title {
-        text-align: center;
-        margin: 0;
-        z-index: 2;
-    }
-    &__line {
-        margin: 25px auto 0 auto;
-        animation: long  60s infinite linear;
-    }
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;

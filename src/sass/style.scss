@@ -1,4 +1,5 @@
 @import "./libs/bootstrap-reboot.min";
+@import "./base/animations";
 @import "./base/variables";
 @import "./base/mixins";
 @import "./libs/font";
@@ -24,3 +25,4 @@
 @import "./blocks/about";
 @import "./blocks/resume";
 @import "./blocks/workskills";
+@import "./blocks/portfolio";

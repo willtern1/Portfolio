@@ -1,0 +1,62 @@
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(30deg);
+    }
+    95% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotatingIn {
+    0% {
+        transform: rotate(0deg);
+        scale: (1);
+    }
+    100% {
+        transform: rotate(90deg);
+        scale: (1.7);
+    }
+}
+
+@keyframes rotatingOut {
+    0% {
+        transform: rotate(90deg);
+        scale: (1.7);
+    }
+    100% {
+        transform: rotate(0deg);
+        scale: (1);
+    }
+}
+
+@keyframes long {
+    0% { 
+        width: 7%;
+     }
+    50% { 
+        width: 85%;
+     }
+    100% {
+        width: 7%;
+    }
+}
+
+.rotatingIn {
+    animation: rotatingIn 1s forwards;
+}
+.rotatingOut {
+    animation: rotatingOut 1s forwards;
+}
+
+.wiggle {
+    animation: wiggle 1s infinite;
+}
