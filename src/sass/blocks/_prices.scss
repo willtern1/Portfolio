@@ -25,7 +25,7 @@
     }
     &__item {
         display: grid;
-        grid-template: 21px 14px / auto max-content;
+        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
         row-gap: 5px;
     }
     &__title {

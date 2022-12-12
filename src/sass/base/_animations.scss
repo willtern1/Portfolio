@@ -16,6 +16,24 @@
     }
 }
 
+@keyframes wiggle-smol {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(10deg);
+    }
+    95% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes rotatingIn {
     0% {
         transform: rotate(0deg);
@@ -59,4 +77,8 @@
 
 .wiggle {
     animation: wiggle 1s infinite;
+}
+
+.wiggle-smol {
+    animation: wiggle-smol 1s infinite;
 }
