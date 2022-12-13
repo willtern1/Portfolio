@@ -688,13 +688,13 @@
                         </div>
                         <h3 class="contacts__text title title_fz14">Или оставьте ваши данные и я сама вам напишу:</h3>
 
-                        <form action="#" class="contacts__form">
+                        <form id="mainForm" action="#" class="contacts__form">
                             <div class="contacts__input">
-                                <input name="name" id="name" type="text">
+                                <input required name="name" id="name" type="text">
                                 <label for="name">Ваше имя</label>
                             </div>
                             <div class="contacts__input">
-                                <input name="email" id="email" type="email">
+                                <input required name="email" id="email" type="email">
                                 <label for="email">Ваша почта</label>
                             </div>
 
@@ -702,14 +702,22 @@
                                 <textarea name="text" id="text"></textarea>
                                 <label for="text">Ваше сообщение</label>
                             </div>
-                            <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__triggers">
+                                <button class="contacts__btn btn">Отправить сообщение</button>
+                                <div class="contacts__policy">
+                                    <input required name="policy" id="policy" type="checkbox">
+                                    <span>Я согласен(а) с <a href="./policy.html" target="_blank">политикой конфиденциальности</a></span>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+
         <script src="./js/wow.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>

@@ -14,7 +14,39 @@ $(document).ready(function () {
             };
         }
     );
+        //Валидация
+    function validateForms (form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                policy: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введи свое имя",
+                    minlength: jQuery.validator.format("Введите более {0}-х символов")
+                },
+                email: {
+                    required: "Пожалуйста, введите свой E-mail",
+                    email: "Неправильно введен E-mail адресс"
+                },
+                policy: {
+                    required: "Пожалуйста, подтвердите соглашение"
+                }
+            }
+        });
+    };
     new WOW().init();
+    validateForms('#mainForm');
 })
 
 const hamburger = document.querySelector('.hamburger'),
