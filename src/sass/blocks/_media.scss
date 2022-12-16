@@ -63,19 +63,19 @@
         padding-bottom: 40px;
         &__wrapper {
             margin-top: 40px;
-            justify-content: center;
+            justify-content: space-evenly;
             grid-template: repeat(auto-fill,280px)/repeat(auto-fill,280px);
             grid-auto-columns: 280px;
             grid-auto-rows: 280px;
         }
         &__item {
             &:nth-child(4) {
-                grid-column: auto;
-                grid-row: auto;
+                grid-column: unset;
+                grid-row: unset;
             }
             &:nth-child(6) {
-                grid-column: auto;
-                grid-row: auto;
+                grid-column: unset;
+                grid-row: unset;
             }
         }
     }
@@ -156,6 +156,15 @@
             column-gap: 20px;
         }
     }
+    .portfolio {
+        .container {
+            max-width: 571px;
+        }
+        &__wrapper {
+            justify-content: space-evenly;
+            gap: 1px;
+        }
+    }
     .workskills {
         padding-bottom: 40px;
         &__wrapper {
@@ -199,11 +208,11 @@
             }
         }
         &__textarea {
-            grid-column: auto;
-            grid-row: auto;
+            grid-column: unset;
+            grid-row: unset;
         }
         &__triggers {
-            grid-column: auto;
+            grid-column: unset;
             display: flex;
             flex-direction: column-reverse;
             gap: 20px;
@@ -264,6 +273,11 @@
             padding: 0;
             margin-top: 40px;
             grid-template-columns: repeat(auto-fill, 300px);
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            gap: 20px;
         }
     }
     
