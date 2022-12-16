@@ -5,6 +5,10 @@
     line-height: 60px;
     z-index: 3;
     position: relative;
+    -webkit-transform:translateZ(3px);
+    -moz-transform:translateZ(3px);
+    -o-transform:translateZ(3px);
+    transform:translateZ(3px);
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
